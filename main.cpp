@@ -192,8 +192,8 @@ class AUV{
 
     }
 
-    void apply_angular_acceleration() {
-
+    void apply_angular_acceleration(double angular_acceleration, double dt) {
+        angular_speed+=angular_acceleration*dt;
     }
 
 
