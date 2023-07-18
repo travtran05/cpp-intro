@@ -131,6 +131,12 @@ class Polygon{
   public:
     std::vector<Point> points;
 
+    Polygon(std::vector<Point> points) : points(points) {
+
+
+    }
+
+    
 
 
 
