@@ -2,6 +2,7 @@
 #include <math.h>
 #include <cmath>
 #include<limits>
+#include <stdio.h>
 
 //practice
 int subtract(int x, int y) {
@@ -19,7 +20,7 @@ float divide(int x, int y) {
     } else {
       std::cout << "No dividing by 0." << std::endl;
     }
-    return numeric_limits<float>::infinity();
+    return INFINITY;
 }
 
 //practice
@@ -72,7 +73,7 @@ class Line{
   public:
     Point p1;
     Point p2;
-    
+
     Line(Point p1, Point p2) : p1(p1), p2(p2){
 
     }
