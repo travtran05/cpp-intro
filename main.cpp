@@ -171,10 +171,10 @@ class AUV{
     Point position;
     double depth;
     double heading;
-    array<double> speed;
+    double speed[3];
     double angular_speed;
 
-    AUV() {
+    AUV(std::string name, Point position, double depth, double heading, double speed[3], double angular_speed) : name(name), position(position), depth(depth), heading(heading), speed(speed), angular_speed(angular_speed) {
 
     }
 
@@ -188,7 +188,7 @@ class AUV{
     }
 
     void apply_angular_acceleration() {
-      
+
     }
 
 
