@@ -4,6 +4,7 @@
 #include<limits>
 #include <stdio.h>
 #include <vector>
+#include <array> 
 
 //practice
 int subtract(int x, int y) {
@@ -165,6 +166,13 @@ class Polygon{
 //problem 9
 
 class AUV{
+  public:
+    std::string name;
+    Point position;
+    double depth;
+    double heading;
+    array<double> speed;
+    double angular_speed;
 
 
 
