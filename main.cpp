@@ -174,6 +174,22 @@ class AUV{
     array<double> speed;
     double angular_speed;
 
+    AUV() {
+
+    }
+
+    void step() {
+
+    }
+
+
+    void apply_acceleration() {
+
+    }
+
+    void apply_angular_acceleration() {
+      
+    }
 
 
 };
