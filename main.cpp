@@ -81,7 +81,13 @@ class Line{
     double length() {
       return p1.distance_to_point(p2);
     }
-   
+    
+    //problem 4
+    double distance_to_point(Point p) {
+
+
+    }
+
 };
 
 
