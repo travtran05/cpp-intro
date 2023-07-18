@@ -136,11 +136,16 @@ class Polygon{
 
     }
 
-    
+    double area() {
+      double area = 0.0;
 
+      for (int i = 1; i<points.size()-1; i++) {
+          Triangle tempTri = Triangle(points[0], points[i], points[i+1]);
+          area+=tempTri.area();
+      };
 
-
-
+      return area;
+    }
 
 
   
