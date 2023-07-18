@@ -1,7 +1,9 @@
 #include <iostream>
 #include <math.h>
 #include <cmath>
+#include<limits>
 
+//practice
 int subtract(int x, int y) {
     return x-y;
 }
@@ -11,16 +13,16 @@ int multiply(int x, int y) {
 
 }
 
-int divide(int x, int y) {
+float divide(int x, int y) {
     if (y!=0) {
       return x/y;
     } else {
       std::cout << "No dividing by 0." << std::endl;
     }
-
+    return numeric_limits<float>::infinity();
 }
 
-
+//practice
 class Circle {
 
 
@@ -29,11 +31,11 @@ public:
 
   double area() {
     return M_PI*radius*radius;
-  }
+  };
 
   Circle(int radius) {
       this->radius = radius;
-  }
+  };
 
 
 };
@@ -50,16 +52,16 @@ class Point {
       this->x = x;
       this->y = y;
 
-    }
+    };
 
     double distance_to_origin() {
       return sqrt(pow(x,2)+pow(y,2));
-    }
+    };
 
     //problem 2
     double distance_to_origin(Point p){
       return sqrt(pow(x-p.x,2)+pow(y-p.y,2));
-    }
+    };
 
 };
 
@@ -68,17 +70,13 @@ class Point {
 class Line{
 
   public:
-
     Point p1;
     Point p2;
+    
+    Line(Point p1, Point p2) : p1(p1), p2(p2){
 
-    Line(Point p1, Point p2){
-        this->p1 = p1;
-        this->p2 = p2;
     }
-
-
-
+   
 };
 
 
