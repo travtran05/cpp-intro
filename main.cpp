@@ -185,7 +185,10 @@ class AUV{
     }
 
 
-    void apply_acceleration() {
+    void apply_acceleration(std::array<double, 3> accel, double dt) {
+        speed[0] += accel[0] *dt;
+        speed[1] += accel[1] *dt;
+        speed[2] += accel[2] *dt;
 
     }
 
