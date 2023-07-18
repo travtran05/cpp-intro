@@ -84,7 +84,13 @@ class Line{
     
     //problem 4
     double distance_to_point(Point p) {
+        double x1 = p.x;
+        double y1 = p.y;
+        double a = p1.y-p2.y;
+        double b = -1*(p1.x-p2.x);
+        double c = p1.x*p2.y-p2.x*p1.y;
 
+        return (abs(a*x1+b*y1+c))/(sqrt(pow(a,2)+pow(b,2)));
 
     }
 
