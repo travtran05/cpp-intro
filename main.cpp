@@ -178,8 +178,10 @@ class AUV{
 
     }
 
-    void step() {
-
+    void step(double dt) {
+      position.x += speed[0] * dt;
+      position.y += speed[1] * dt;
+      depth += speed[2] * dt;
     }
 
 
