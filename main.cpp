@@ -60,7 +60,7 @@ class Point {
     };
 
     //problem 2
-    double distance_to_origin(Point p){
+    double distance_to_point(Point p){
       return sqrt(pow(x-p.x,2)+pow(y-p.y,2));
     };
 
@@ -76,6 +76,10 @@ class Line{
 
     Line(Point p1, Point p2) : p1(p1), p2(p2){
 
+    }
+
+    double length() {
+      return p1.distance_to_point(p2);
     }
    
 };
