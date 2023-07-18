@@ -3,6 +3,7 @@
 #include <cmath>
 #include<limits>
 #include <stdio.h>
+#include <vector>
 
 //practice
 int subtract(int x, int y) {
@@ -107,6 +108,11 @@ class Triangle
     Point p2;
     Point p3;
 
+
+    Triangle(Point p1, Point p2, Point p3) : p1(p1), p2(p2), p3(p3) {
+
+    }
+
     double area()
     {
       double a = sqrt(pow((p1.x-p2.x),2) + pow((p1.y-p2.y),2));
@@ -118,6 +124,22 @@ class Triangle
       return area;
     }
 };
+
+// problem 7
+
+class Polygon{
+  public:
+    std::vector<Point> points;
+
+
+
+
+
+
+
+  
+};
+
 
 
 
