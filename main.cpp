@@ -146,7 +146,18 @@ class Polygon{
 
       return area;
     }
+    //problem 8
+    double perimeter() {
+        double perimeter = 0.0;
+        for (int i = 0; i<points.size()-1; i++) {
+          Line tempLine = Line(points[i], points[i+1]);
+          perimeter+=tempLine.length();
 
+        }
+
+        return perimeter;
+
+    }
 
   
 };
