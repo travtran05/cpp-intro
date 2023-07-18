@@ -155,6 +155,8 @@ class Polygon{
           perimeter+=tempLine.length();
 
         }
+        Line tempLine2 = Line(points[0], points[points.size()-1]);
+        perimeter+=tempLine2.length();
 
         return perimeter;
 
