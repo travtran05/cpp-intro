@@ -13,11 +13,11 @@ public:
   double y(){ return m_d_y; }
 
   void setx(double value) {
-        m_d_x += value;
+    m_d_x += value;
   }
   
   void sety(double value) {
-        m_d_y += value;
+    m_d_y += value;
   }
 
 
