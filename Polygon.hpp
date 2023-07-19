@@ -1,5 +1,6 @@
 #pragma once
 #include "Point.hpp"
+#include <vector>
 
 class Polygon {
     private:
