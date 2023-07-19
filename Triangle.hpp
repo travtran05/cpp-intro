@@ -1,5 +1,4 @@
 #pragma once
-#include "Triangle.hpp"
 #include "Point.hpp"
 
 

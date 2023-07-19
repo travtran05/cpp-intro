@@ -52,41 +52,15 @@ public:
 
 //problem 5 told to skip
 
-// problem 6
+// problem 6 removed because of problem 10
 
-class Triangle
-{
-  public:
-    Point p1;
-    Point p2;
-    Point p3;
-
-
-    Triangle(Point p1, Point p2, Point p3) : p1(p1), p2(p2), p3(p3) {
-
-    }
-
-    double area()
-    {
-      double a = sqrt(pow((p1.x()-p2.x()),2) + pow((p1.y()-p2.y()),2));
-      double b = sqrt(pow((p1.x()-p3.x()),2) + pow((p1.y()-p3.y()),2));
-      double c = sqrt(pow((p2.x()-p3.x()),2) + pow((p2.y()-p3.y()),2));
-      double semi_perim = (a+b+c)/2;
-
-      double area = sqrt(semi_perim*(semi_perim-a)*(semi_perim-b)*(semi_perim-c));
-      return area;
-    }
-};
-
-// problem 7
+// problem 7 and 8
 
 class Polygon{
   public:
     std::vector<Point> points;
 
     Polygon(std::vector<Point> points) : points(points) {
-
-
     }
 
     double area() {
@@ -99,7 +73,7 @@ class Polygon{
 
       return area;
     }
-    //problem 8
+
     double perimeter() {
         double perimeter = 0.0;
         for (int i = 0; i<points.size()-1; i++) {
@@ -114,7 +88,6 @@ class Polygon{
 
     }
 
-  
 };
 
 //problem 9
