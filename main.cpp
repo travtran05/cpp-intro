@@ -90,11 +90,11 @@ class Line{
     
     //problem 4
     double distance_to_point(Point p) {
-        double x1 = p.x;
-        double y1 = p.y;
-        double a = p1.y-p2.y;
-        double b = -1*(p1.x-p2.x);
-        double c = p1.x*p2.y-p2.x*p1.y;
+        double x1 = p.x();
+        double y1 = p.y();
+        double a = p1.y()-p2.y();
+        double b = -1*(p1.x()-p2.x());
+        double c = p1.x()*p2.y()-p2.x()*p1.y();
 
         return (abs(a*x1+b*y1+c))/(sqrt(pow(a,2)+pow(b,2)));
 
@@ -120,9 +120,9 @@ class Triangle
 
     double area()
     {
-      double a = sqrt(pow((p1.x-p2.x),2) + pow((p1.y-p2.y),2));
-      double b = sqrt(pow((p1.x-p3.x),2) + pow((p1.y-p3.y),2));
-      double c = sqrt(pow((p2.x-p3.x),2) + pow((p2.y-p3.y),2));
+      double a = sqrt(pow((p1.x()-p2.x()),2) + pow((p1.y()-p2.y()),2));
+      double b = sqrt(pow((p1.x()-p3.x()),2) + pow((p1.y()-p3.y()),2));
+      double c = sqrt(pow((p2.x()-p3.x()),2) + pow((p2.y()-p3.y()),2));
       double semi_perim = (a+b+c)/2;
 
       double area = sqrt(semi_perim*(semi_perim-a)*(semi_perim-b)*(semi_perim-c));
@@ -185,8 +185,8 @@ class AUV{
     }
 
     void step(double dt) {
-      position.x += speed[0] * dt;
-      position.y += speed[1] * dt;
+      position.setx(speed[0] * dt);
+      position.sety(speed[1] * dt);
       depth += speed[2] * dt;
     }
 
