@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include "Point.hpp"
+#include <array>
 
 class AUV {
     private:
