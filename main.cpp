@@ -45,32 +45,7 @@ public:
 };
 
 
-//problem 1
-
-// class Point {
-//   public:
-//     double x;
-//     double y;
-
-//     Point(double x, double y){
-//       this->x = x;
-//       this->y = y;
-
-//     };
-
-//     double distance_to_origin() {
-//       return sqrt(pow(x,2)+pow(y,2));
-//     };
-
-//     //problem 2
-//     double distance_to_point(Point p){
-//       return sqrt(pow(x-p.x,2)+pow(y-p.y,2));
-//     };
-
-// };
-
-
-// removed because of problem 10
+// problems 1 and 2 removed because of problem 10
 
 //problem 3
 
