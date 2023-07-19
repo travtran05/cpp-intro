@@ -75,8 +75,9 @@ int main()
 
   std::cout << "The area is " << circle1.area() << std::endl;
 
+  Point point1 = Point(1,1);
 
-  
+  std::cout << "The distance to origin is " << point1.distance_to_origin() << std::endl;
 
 
   return 0;
