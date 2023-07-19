@@ -7,6 +7,10 @@
 #include <array> 
 #include "Point.hpp"
 #include "Line.hpp"
+#include "Triangle.hpp"
+#include "Polygon.hpp"
+#include "AUV.hpp"
+
 
 //practice
 int subtract(int x, int y) {
