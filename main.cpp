@@ -54,41 +54,7 @@ public:
 
 // problem 6 removed because of problem 10
 
-// problem 7 and 8
-
-class Polygon{
-  public:
-    std::vector<Point> points;
-
-    Polygon(std::vector<Point> points) : points(points) {
-    }
-
-    double area() {
-      double area = 0.0;
-
-      for (int i = 1; i<points.size()-1; i++) {
-          Triangle tempTri = Triangle(points[0], points[i], points[i+1]);
-          area+=tempTri.area();
-      };
-
-      return area;
-    }
-
-    double perimeter() {
-        double perimeter = 0.0;
-        for (int i = 0; i<points.size()-1; i++) {
-          Line tempLine = Line(points[i], points[i+1]);
-          perimeter+=tempLine.length();
-
-        }
-        Line tempLine2 = Line(points[0], points[points.size()-1]);
-        perimeter+=tempLine2.length();
-
-        return perimeter;
-
-    }
-
-};
+// problem 7 and 8 removed because of problem 10
 
 //problem 9
 

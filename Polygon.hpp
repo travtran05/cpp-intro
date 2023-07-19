@@ -11,7 +11,7 @@ class Polygon {
         double area();
         double perimeter();
 
-        std::vector<Point> setPoints(std::vector<Point> newPoints) {
+        void setPoints(std::vector<Point> newPoints) {
             points = newPoints;
         }
 

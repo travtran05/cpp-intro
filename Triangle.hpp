@@ -17,15 +17,15 @@ class Triangle {
 
         double area();
 
-        Point setP1(Point newP1) {
+        void setP1(Point newP1) {
             p1 = newP1;
         }
 
-        Point setP2(Point newP2) {
+        void setP2(Point newP2) {
             p2 = newP2;
         }
 
-        Point setP3(Point newP3) {
+        void setP3(Point newP3) {
             p3 = newP3;
         }
 

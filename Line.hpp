@@ -9,8 +9,8 @@ class Line {
     public:
         Line(Point p1, Point p2);
 
-        Point p1() {return _p1;}
-        Point p2() {return _p2;}
+        void p1() {return _p1;}
+        void p2() {return _p2;}
 
         Point setP1(Point newP1) {
             _p1 = newP1;
