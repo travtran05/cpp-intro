@@ -6,6 +6,7 @@
 #include <vector>
 #include <array> 
 #include "Point.hpp"
+#include "Line.hpp"
 
 //practice
 int subtract(int x, int y) {
@@ -28,8 +29,6 @@ float divide(int x, int y) {
 
 //practice
 class Circle {
-
-
 public:
   double radius;
 
@@ -41,43 +40,13 @@ public:
       this->radius = radius;
   };
 
-
 };
-
 
 // problems 1 and 2 removed because of problem 10
 
-//problem 3
+//problems 3 and 4 removed because of problem 10
 
-class Line{
-
-  public:
-    Point p1;
-    Point p2;
-
-    Line(Point p1, Point p2) : p1(p1), p2(p2){
-
-    }
-
-    double length() {
-      return p1.distance_to_point(p2);
-    }
-    
-    //problem 4
-    double distance_to_point(Point p) {
-        double x1 = p.x();
-        double y1 = p.y();
-        double a = p1.y()-p2.y();
-        double b = -1*(p1.x()-p2.x());
-        double c = p1.x()*p2.y()-p2.x()*p1.y();
-
-        return (abs(a*x1+b*y1+c))/(sqrt(pow(a,2)+pow(b,2)));
-
-    }
-
-};
-
-
+//problem 5 told to skip
 
 // problem 6
 
@@ -159,10 +128,11 @@ class AUV{
 
     }
 
-    void step(double dt) {
+    void step(const double &dt) {
       position.setx(speed[0] * dt);
       position.sety(speed[1] * dt);
       depth += speed[2] * dt;
+      heading += angular_speed*dt;
     }
 
 
