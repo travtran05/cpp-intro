@@ -11,15 +11,11 @@ class Triangle {
     public:
         Triangle(Point p1, Point p2, Point p3);
 
-        Point p1() {return p1;}
-        Point p2() {return p2;}
-        Point p3() {return p3;}
+        Point _p1() {return p1;}
+        Point _p2() {return p2;}
+        Point _p3() {return p3;}
 
         double area();
-
-        Point p1() {return p1;}
-        Point p2() {return p2;}
-        Point p3() {return p3;}
 
         Point setP1(Point newP1) {
             p1 = newP1;
