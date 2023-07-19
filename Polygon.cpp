@@ -1,6 +1,7 @@
 #include "Polygon.hpp"
 #include "Triangle.hpp"
 #include "Line.hpp"
+#include "Point.hpp"
 #include <vector>
 #include <cmath>
 
